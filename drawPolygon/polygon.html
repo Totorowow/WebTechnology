@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>drawPolygon</title>
+<style>
+       body{
+		   background:#6F9;
+	   }
+	   #controls{
+		   position:absolute;
+		   left:70px;
+		   top:40px;
+		   font:"Arial Black", Gadget, sans-serif;
+		   font-size:20px;
+		   color:#00F;
+		   
+		   
+		   
+		  
+	   }
+	   
+	   #canvas{
+		   background:#CF9;
+		   cursor:pointer;
+		   margin-left:50px;
+		   margin-top:20px;
+		   -webkit-box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+		   -moz-box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+		   box-shadow:4px 4px 8px rgba(0,0,0,0.5);
+	   }
+	   </style>
+</head>
+
+<body>
+     <canvas id="canvas" width="1200" height="600"></canvas>
+       
+        <div id="controls">
+           <div align="center" 
+     
+            <h1>DRAW POLYGON</h1>
+            
+            </div></br>
+            strokeStyle：
+            <select id="strokeStyleSelect">
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="orange">orange</option>
+                <option value="cornflowerblue" selected>cornflowerblue</option>
+                <option value="goldenrod">goldenrod</option>
+                <option value="navy">navy</option>
+                <option value="purple">purple</option>
+                <option value="white">white</option>
+                <option value="pink">pink</option>
+                <option value="black">black</option>
+                <option value="yellow">yellow</option>
+                 <option value="none">none</option>
+                 
+            </select>
+            fillStyle：
+            <select id="fillStyleSelect">
+                  <option value="white">white</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="orange">orange</option>
+                 <option value="pink">pink</option>
+                <option value="cornflowerblue" selected>cornflowerblue</option>
+                <option value="goldenrod">goldenrod</option>
+                <option value="navy">navy</option>
+                <option value="purple">purple</option>
+                <option value="black">black</option>
+                <option value="yellow">yellow</option>
+            </select>
+            polygonSides：
+            <select id="sidesSelect">
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                 
+            </select>
+
+            startAngle：
+            <select id="startAngleSelect">
+             <option value="0" selected>0</option>
+            <option value="30" selected>30</option>
+                <option value="45">45</option>
+                <option value="60">60</option>
+                <option value="75">75</option>
+                <option value="90">90</option>
+                <option value="120">120</option>
+                <option value="180">180</option>
+                <option value="270">270</option>
+                <option value="360">360</option>
+               
+                </select>
+
+            fill：
+            <input id="fillCheckbox" type="checkbox" checked />
+            <input id="eraseAllButton" type="button" value="eraseAllButton" /><br />
+            draggable：<input id="editCheckbox" type="checkbox" />
+            guidewire：
+            <input id="guidewireCheckbox" type="checkbox"/>
+        </div>
+
+    
+    <script src="polygon.js"></script>   
+        
+</body>
+</html>
+
