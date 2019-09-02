@@ -210,7 +210,7 @@ var canvas = document.getElementById('canvas'),
                 this.x = x;
                 this.y = y;
             }
-            //多边形的构造函数
+            
             var Polygon = function (centerX,centerY,radius,sides,startAngle,strokeStyle,fillStyle,filled){
 
                 this.x = centerX;
